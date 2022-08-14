@@ -318,6 +318,11 @@ footer p {
         margin-bottom: 80px;
     }
 
+    .funcionamento table {
+        width: 83vw;
+        
+    }
+
     .download {
         display: flex;
         flex-direction: column;
