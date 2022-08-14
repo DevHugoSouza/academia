@@ -2,21 +2,24 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@700&family=Sriracha&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@700&family=Sriracha&display=swap');
+
 * {
     margin: 0px;
     padding: 0px;
 }
 
 .principal {
-    width: 100vw;
-    height: 100vh;
+    width: 98.7vw;
+    height: 110vh;
     font-size: 0.9em;
     font-family: 'Lato', sans-serif;
 }
 
 .principal {
-    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , rgba(20, 20, 20, 1)), url(imagens/fundo.jpg);
+    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , rgba(20, 20, 20, 1)), url(imagens/pexels-victor-freitas-949129.jpg);
 
+    background-attachment: fixed;
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -32,13 +35,13 @@ header {
 
 header h2 {
     color: white;
-    font-size: clamp(0.8em, 2vw, 1.9em)
+    font-size: clamp(1.2em, 2vw, 1.9em)
 }
 
 menu {
     display: flex;
     gap: 20px;
-    font-size: clamp(0.9em, 1.5vw, 1.3em);   
+    font-size: clamp(1.2em, 1.5vw, 1.4em);   
     flex-wrap: nowrap;
 }
 
@@ -50,6 +53,7 @@ menu a {
 
 menu a:hover {
     border-bottom: 1px solid yellow;
+    transform: scale(1.1);
 }
 
 main {
@@ -98,57 +102,235 @@ main p {
     color: yellow;
     font-weight: bold;
     border: none;
-    
+}
+
+.horario-tudo {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 
 .horario {
+    width: 100vw;
     display: flex;
     flex-direction: column;
     gap: 30px;
 
 
     background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(185, 185, 185));
-    margin-top: 90px;
-
-    
+    margin-top: 90px;  
 }
 
-.horario h2 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    text-align: center;
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
-    padding-bottom: 10px;
+.icones {
+    display: flex;
+    flex-direction: column;
+    gap: 30px; 
 }
 
-table {
-    font-size: clamp(1em, 1.5vw, 1.3em);
-    text-align: left;
-    font-weight: bold;
+.icones img {
+    width: 9vw;
+    max-width: 10vw;
+}
 
-    border: 2px solid black;
-    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+.icones img:hover {
+    background-color: rgb(255, 236, 65);
+    border-radius: 50px;
+    transform: scale(1.1);
+    padding: 2px;
+    transition: all 0.2s ease-in;
+}
+
+.funcionamento {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.funcionamento h2 , td {
+    font-family: 'Baloo 2', cursive;
+}
+
+.funcionamento table{
     border-collapse: collapse;
+    width: 30vw;
 }
 
-table td {
-    border: 1px solid black;
-    padding: 10px 20px;
-    
+.funcionamento table td {
+    border-top: 1px solid rgb(146, 146, 146);
+    padding: 10px 30px 10px 0px ;
+    font-weight: 600;
 }
 
-table .dia {
-    padding-left: 30px;
-    padding-right: 30px;
+.funcionamento table .hora {
+    text-align: end;
 }
 
-.conjunto {
+.planos {
+    width: 130px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 30px;
+    padding: 10px 0px 30px 0px;
+    margin-bottom: 40px;
+
+    border: 3px solid rgb(255, 0, 0);
+    border-radius: 10px;
+    font-family: 'Baloo 2', cursive;
+} 
+
+.planos h3 {
+    display: block;
+    margin: auto;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    width: 120px;
+
+}
+
+.planos h4 {
+    display: block;
+    margin: auto;
+    border-bottom: 2px solid rgb(255, 0, 0);
+    width: 120px;
+
+}
+
+.real {
+    display: inline;
+    color: rgb(0, 0, 0);
+    font-size: 40px;
+}
+
+.endereço {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+
+    font-family: 'Baloo 2', cursive;
+}
+
+.endereço p {
+    font-family: 'Baloo 2', cursive;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.endereço iframe {
+    display: block;
+    margin: auto;
+    min-width: 300px;
+    width: 30vw;
+}
+
+.app {
+    background-image: linear-gradient(to bottom, rgb(185, 185, 185), black);
+    padding-top: 100px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.app img {
+    width: 80vw;
+    max-width: 600px;
+}
+
+.app h2,p {
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.app h2 {
+    font-weight: bold;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+    font-size: clamp(1.4em, 3vw, 1.9em)
+}
+
+.app p{
+    font-size: clamp(1.2em, 1.5vw, 1.9em)
+}
+
+.download {
     display: flex;
     flex-direction: row;
+    width: 40vw;
+    gap: 60px;
     justify-content: center;
-    gap: 50px;
-
-    flex-wrap: wrap;
 }
+
+#frase h2 {
+    color: red;
+    font-family: 'Baloo 2', cursive;
+    padding: 20px;
+    text-align: center;
+    font-size: clamp(1em, 3vw, 1.9em)
+}
+
+footer {
+    background-color: rgb(14, 14, 14);
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+    text-shadow: 1px 1px 4px rgb(0 0 0);
+}
+
+footer p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 15px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 600px) {
+
+    body {
+        width: 100vw;
+    }
+
+    header {
+        display: flex;
+        flex-direction: column;
+        gap: 40px;
+    }
+
+    header h2 {
+        text-align: center;
+    }
+
+    menu {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: flex-end;
+    }
+
+
+    aside .icones {
+        display: none;
+    }
+
+    aside .funcionamento {
+        margin-bottom: 80px;
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download img {
+        width: 70vw;
+    }
+}
+
+
+
+
 
 
