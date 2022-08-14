@@ -1,0 +1,154 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Passion+One:wght@700&family=Sriracha&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+.principal {
+    width: 100vw;
+    height: 100vh;
+    font-size: 0.9em;
+    font-family: 'Lato', sans-serif;
+}
+
+.principal {
+    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , rgba(20, 20, 20, 1)), url(imagens/fundo.jpg);
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-y: 0px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;   
+    padding: 10px;
+}
+
+header h2 {
+    color: white;
+    font-size: clamp(0.8em, 2vw, 1.9em)
+}
+
+menu {
+    display: flex;
+    gap: 20px;
+    font-size: clamp(0.9em, 1.5vw, 1.3em);   
+    flex-wrap: nowrap;
+}
+
+
+menu a {
+    color: white;
+    text-decoration: none;
+}
+
+menu a:hover {
+    border-bottom: 1px solid yellow;
+}
+
+main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-top: 230px;
+    gap: 30px;
+}
+
+main h1 {
+    color: yellow;
+    font-size: clamp(1.8em, 3vw, 3em);
+    justify-content: center;
+}
+
+main p {
+    background-color: lightgray;
+    font-weight: 700;
+    padding: 3px;
+    font-size: clamp(0.9em, 1.5vw, 1.3em);
+}
+
+.botoes {   
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    padding-top: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.botoes a {
+    text-decoration: none;
+    color: white;
+    font-size: clamp(1.3em, 1.5vw, 1.8em);
+
+    border: 1px solid white;
+    border-radius: 15px;
+    padding: 10px 20px;
+}
+
+.botoes a:hover {
+    background-image: linear-gradient(to right, rgb(56, 56, 56), rgb(51, 51, 51)) ;
+    color: yellow;
+    font-weight: bold;
+    border: none;
+    
+}
+
+.horario {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255), rgb(185, 185, 185));
+    margin-top: 90px;
+
+    
+}
+
+.horario h2 {
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.473);
+    padding-bottom: 10px;
+}
+
+table {
+    font-size: clamp(1em, 1.5vw, 1.3em);
+    text-align: left;
+    font-weight: bold;
+
+    border: 2px solid black;
+    box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.411);
+    border-collapse: collapse;
+}
+
+table td {
+    border: 1px solid black;
+    padding: 10px 20px;
+    
+}
+
+table .dia {
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.conjunto {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
+
+    flex-wrap: wrap;
+}
+
+
