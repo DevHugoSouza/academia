@@ -233,8 +233,7 @@ main p {
 }
 
 .app {
-    background-image: linear-gradient(to bottom, rgb(185, 185, 185), black);
-    padding-top: 100px;
+    background-image: linear-gradient(to bottom, rgb(185, 185, 185), rgb(31, 31, 31));
     padding-bottom: 80px;
     display: flex;
     flex-direction: column;
@@ -270,6 +269,40 @@ main p {
     justify-content: center;
 }
 
+#professor {
+    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , #2B2A29), url(imagens/personal.jpg);
+    background-size: cover;
+    background-attachment: scroll;
+    height: 180vw;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 520px;
+    padding-top: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+#professor h2 {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: clamp(1.4em, 3vw, 1.9em);
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.432);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+    padding-top: 20px;
+}
+
+#professor p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 500;
+    font-size: clamp(1.2em, 1.5vw, 1.9em);
+    color: rgb(255, 255, 255);
+    text-shadow: 1px 1px 1px black;
+
+}
+
+
 #frase h2 {
     color: rgb(255, 102, 0);
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.507);
@@ -304,6 +337,8 @@ footer p {
     }
 
     header {
+        margin-left: 10px;
+        margin-right: 10px;
         display: flex;
         flex-direction: row;
         gap: 40px;
@@ -312,7 +347,7 @@ footer p {
 
     header h2 {
         text-align: center;
-        width: 40vw;
+        width: 60px;
         text-align: left;
     }
 
@@ -367,6 +402,43 @@ footer p {
         background-color: white;
         border-radius: 30px;
         padding: 2px;
+    }
+
+    #endereço iframe {
+        padding-bottom: 80px;
+    }
+
+    #professor {
+        background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , rgba(20, 20, 20, 1)), url(imagens/personal.jpg);
+        background-size: cover;
+        background-attachment: scroll;
+        height: 180vw;
+
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 520px;
+        padding-top: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    #professor h2 {
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: clamp(1.4em, 3vw, 1.9em);
+        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.432);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+        padding-top: 20px;
+    }
+
+    #professor p {
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: 500;
+        font-size: clamp(1.2em, 1.5vw, 1.9em);
+        color: rgb(255, 255, 255);
+        text-shadow: 1px 1px 1px black;
+
     }
 }
 
