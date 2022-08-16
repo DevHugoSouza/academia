@@ -222,7 +222,7 @@ main p {
 #endereço p {
     font-family: 'Baloo 2', cursive;
     font-weight: 600;
-    font-size: 18px;
+    font-size: 2px;
 }
 
 #endereço iframe {
@@ -235,6 +235,7 @@ main p {
 .app {
     background-image: linear-gradient(to bottom, rgb(185, 185, 185), rgb(31, 31, 31));
     padding-bottom: 80px;
+    padding-top: 100px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -269,39 +270,13 @@ main p {
     justify-content: center;
 }
 
-#professor {
-    background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , #2B2A29), url(imagens/personal.jpg);
-    background-size: cover;
-    background-attachment: scroll;
-    height: 180vw;
-
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 520px;
-    padding-top: 10px;
-    padding-left: 10px;
-    padding-right: 10px;
+.download img {
+    width: 20vw;
 }
 
-#professor h2 {
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: clamp(1.4em, 3vw, 1.9em);
-    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.432);
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px black;
-    padding-top: 20px;
+.contato {
+    display: none;
 }
-
-#professor p {
-    font-family: Arial, Helvetica, sans-serif;
-    font-weight: 500;
-    font-size: clamp(1.2em, 1.5vw, 1.9em);
-    color: rgb(255, 255, 255);
-    text-shadow: 1px 1px 1px black;
-
-}
-
 
 #frase h2 {
     color: rgb(255, 102, 0);
@@ -325,6 +300,114 @@ footer p {
     font-size: 15px;
     padding: 5px;
 }
+
+
+
+@media screen and (min-width: 601px) and (max-width: 1000px) {
+
+    body {
+        width: 100vw;
+    }
+
+    .principal {
+        width: 100vw;
+        height: 700px;
+    }
+
+    header {
+        margin-left: 10px;
+        margin-right: 10px;
+        display: flex;
+        flex-direction: row;
+        gap: 40px;
+        justify-content: space-between;
+    }
+
+    header h2 {
+        text-align: center;
+        width: 60px;
+        text-align: left;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        padding-top: 150px;
+    }
+
+    menu {
+        padding-top: 30px;
+        flex-direction: column;
+        align-items: flex-end;
+        padding-top: 0px;
+    }
+
+    aside .icones {
+        display: none;
+    }
+
+    aside #funcionamento {
+        margin-bottom: 80px;
+    }
+
+    #funcionamento table {
+        width: 83vw;
+        
+    }
+
+    .download {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .download img {
+        max-width: 200px;
+    }
+
+    .contato {
+        background-image: linear-gradient(to bottom, rgb(255, 102, 0), rgb(173, 69, 0));
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 15px 0px 15px 0px;
+    }
+    .contato img {
+        width: 10vw;
+        max-width: 70px;
+    }
+
+    .contato img:hover {
+        background-color: white;
+        border-radius: 30px;
+        padding: 2px;
+    }
+
+    #endereço h2 {
+        font-size: 4vw;
+    }
+
+    #endereço p {
+        font-size: 3vw;
+    }
+
+    #endereço iframe {
+        width: 70vw;
+        padding-bottom: 80px;
+    }
+
+    .app h2 {
+        font-size: 3vw;
+    }
+
+    .app p {
+        font-size: 2.3vw;
+    }
+
+    .app img {
+        width: 50vw;
+    }
+}   
 
 @media screen and (max-width: 600px) {
 
@@ -384,6 +467,7 @@ footer p {
     }
 
     .download img {
+        max-width:250px;
         width: 50vw;
     }
 
@@ -396,6 +480,7 @@ footer p {
     }
     .contato img {
         width: 15vw;
+        max-width: 65px;
     }
 
     .contato img:hover {
@@ -404,41 +489,21 @@ footer p {
         padding: 2px;
     }
 
-    #endereço iframe {
-        padding-bottom: 80px;
+    #endereço h2 {
+        font-size: 24px;
     }
 
-    #professor {
-        background-image: linear-gradient(to right, rgba(17, 17, 17, 0.8) , rgba(20, 20, 20, 1)), url(imagens/personal.jpg);
-        background-size: cover;
-        background-attachment: scroll;
-        height: 180vw;
-
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 520px;
-        padding-top: 10px;
-        padding-left: 10px;
-        padding-right: 10px;
+    #endereço p {
+        font-size: 17px;
     }
 
-    #professor h2 {
-        font-family: Arial, Helvetica, sans-serif;
-        font-size: clamp(1.4em, 3vw, 1.9em);
-        text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.432);
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 1px black;
-        padding-top: 20px;
+
+    .app h2 {
+        font-size: 22px;
     }
 
-    #professor p {
-        font-family: Arial, Helvetica, sans-serif;
-        font-weight: 500;
-        font-size: clamp(1.2em, 1.5vw, 1.9em);
-        color: rgb(255, 255, 255);
-        text-shadow: 1px 1px 1px black;
-
+    .app p {
+        font-size: 17px;
     }
 }
 
